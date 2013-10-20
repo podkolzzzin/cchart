@@ -1,0 +1,22 @@
+﻿<Window x:Class="ChartBuilder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CChart 0.1 Alpha" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="80px"></RowDefinition>
+        </Grid.RowDefinitions>
+        <RichTextBox GotFocus="XSource_OnGotFocus" x:Name="XSource" Margin="5 5 5 5">
+            
+        </RichTextBox>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button FontSize="24" Margin="5" x:Name="XBuild" Click="XBuild_OnClick">Build</Button>            
+        </Grid>
+
+    </Grid>
+</Window>

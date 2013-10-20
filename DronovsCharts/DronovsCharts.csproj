@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9DFFEDC-A044-4F9F-B6C2-3C00395BB225}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DronovsCharts</RootNamespace>
+    <AssemblyName>DronovsCharts</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analyze\Cin.cs" />
+    <Compile Include="Analyze\COperator.cs" />
+    <Compile Include="Analyze\Cout.cs" />
+    <Compile Include="Analyze\CPPFileAnalyzer.cs" />
+    <Compile Include="Analyze\ComplexOperator.cs" />
+    <Compile Include="Analyze\Cycle.cs" />
+    <Compile Include="Analyze\If.cs" />
+    <Compile Include="Analyze\IOOperator.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Analyze\StringExtensions.cs" />
+    <Compile Include="Analyze\Switch.cs" />
+    <Compile Include="Visualize\Blocks\ActionBlock.cs" />
+    <Compile Include="Visualize\Blocks\Block.cs" />
+    <Compile Include="Visualize\Blocks\CaseBlock.cs" />
+    <Compile Include="Visualize\Blocks\ConditionalBlock.cs" />
+    <Compile Include="Visualize\Blocks\CycleBlock.cs" />
+    <Compile Include="Visualize\Blocks\EntryBlock.cs" />
+    <Compile Include="Visualize\Blocks\GraphicOperator.cs" />
+    <Compile Include="Visualize\Blocks\InputBlock.cs" />
+    <Compile Include="Visualize\Blocks\OutputBlock.cs" />
+    <Compile Include="Visualize\FakeGraphics\FakeArc.cs" />
+    <Compile Include="Visualize\FakeGraphics\FakeElement.cs" />
+    <Compile Include="Visualize\FakeGraphics\FakeGraphics.cs" />
+    <Compile Include="Visualize\FakeGraphics\FakeLine.cs" />
+    <Compile Include="Visualize\FakeGraphics\FakeRect.cs" />
+    <Compile Include="Visualize\FakeGraphics\FakeText.cs" />
+    <Compile Include="Visualize\GraphicsExtension.cs" />
+    <Compile Include="Visualize\Visualizer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,5 @@
+E:\Projects\Sharp\DronovsCharts\DronovsCharts\bin\Debug\DronovsCharts.pdb
+E:\Projects\Sharp\DronovsCharts\DronovsCharts\obj\Debug\DronovsCharts.pdb
+E:\Projects\Sharp\DronovsCharts\DronovsCharts\bin\Debug\DronovsCharts.dll.config
+E:\Projects\Sharp\DronovsCharts\DronovsCharts\bin\Debug\DronovsCharts.dll
+E:\Projects\Sharp\DronovsCharts\DronovsCharts\obj\Debug\DronovsCharts.dll

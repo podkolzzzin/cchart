@@ -1,0 +1,15 @@
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\bin\Release\DronovsCharts.dll
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\bin\Release\DronovsCharts.pdb
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\obj\Release\ChartBuilder.csprojResolveAssemblyReference.cache
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\obj\Release\MainWindow.baml
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\obj\Release\MainWindow.g.cs
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\obj\Release\App.g.cs
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\obj\Release\ChartBuilder.Properties.Resources.resources
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\obj\Release\ChartBuilder.csproj.GenerateResource.Cache
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\bin\Release\CChart.exe.config
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\bin\Release\CChart.exe
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\bin\Release\CChart.pdb
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\obj\Release\CChart_MarkupCompile.cache
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\obj\Release\CChart.g.resources
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\obj\Release\CChart.exe
+E:\Projects\Sharp\DronovsCharts\ChartBuilder\obj\Release\CChart.pdb

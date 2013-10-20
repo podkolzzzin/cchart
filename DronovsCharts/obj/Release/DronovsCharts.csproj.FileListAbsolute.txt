@@ -1,0 +1,6 @@
+E:\Projects\Sharp\DronovsCharts\DronovsCharts\bin\Release\DronovsCharts.dll.config
+E:\Projects\Sharp\DronovsCharts\DronovsCharts\bin\Release\DronovsCharts.dll
+E:\Projects\Sharp\DronovsCharts\DronovsCharts\bin\Release\DronovsCharts.pdb
+E:\Projects\Sharp\DronovsCharts\DronovsCharts\obj\Release\DronovsCharts.dll
+E:\Projects\Sharp\DronovsCharts\DronovsCharts\obj\Release\DronovsCharts.pdb
+E:\Projects\Sharp\DronovsCharts\DronovsCharts\obj\Release\DronovsCharts.csprojResolveAssemblyReference.cache
