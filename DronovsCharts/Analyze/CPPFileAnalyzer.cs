@@ -32,7 +32,7 @@ namespace DronovsCharts.Analyze
 
         private void _findMain(string code)
         {
-            code = code.Replace("\r\n", "").Replace("\t", "");
+            code = code.Trim(' ', '\n', '\r', '\t');
             var main = code.Substring(code.IndexOf("main()") + 6);
             main = main.Substring(main.IndexOf('{') + 1);
 
@@ -53,11 +53,11 @@ namespace DronovsCharts.Analyze
             If sIf = null;
             foreach (var oprtr in oprtrs)
             {
-                if (oprtr.StartsWith("cout<<") || oprtr.StartsWith("printf"))
+                if (oprtr.StartsWith("cout") || oprtr.StartsWith("printf"))
                 {
                     _result.AddRange(new Cout(oprtr).GetOperators());
                 }
-                else if (oprtr.StartsWith("cin>>"))
+                else if (oprtr.StartsWith("cin"))
                 {
                     _result.AddRange(new Cin(oprtr).GetOperators());
                 }

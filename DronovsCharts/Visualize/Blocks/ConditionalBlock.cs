@@ -110,12 +110,12 @@ namespace DronovsCharts.Visualize.Blocks
                 Graphics.DrawArrow(ArrowPen, l.RX + l.RWidth/2, RHeight,
                                    RWidth/2, RHeight);
             }
-            else
-            {
-                Graphics.DrawLine(ArrowPen, (offsetX + 14) * 20, offsetY * 20, (offsetX + 14) * 20, RHeight);
-                Graphics.DrawArrow(ArrowPen, (offsetX + 14) * 20, RHeight,
-                   RWidth / 2, RHeight);
-            }
+            //else
+            //{
+            //    Graphics.DrawLine(ArrowPen, (offsetX + 14) * 20, offsetY * 20, (offsetX + 14) * 20, RHeight);
+            //    Graphics.DrawArrow(ArrowPen, (offsetX + 14) * 20, RHeight,
+            //       RWidth / 2, RHeight);
+            //}
         }
 
         private List<Block> _preBuildBranch(IEnumerable<COperator> operators, out Size s)
@@ -164,10 +164,12 @@ namespace DronovsCharts.Visualize.Blocks
                 }
                 else
                 {
-                    Graphics.DrawLine(ArrowPen, _block.RX + _block.RWidth, _block.RY + _block.RHeight/2,
-                                      RWidth/2 + 14*20, _block.RY + _block.RHeight/2);
-                    Graphics.DrawLine(ArrowPen, RWidth/2 + 14*20, _block.RY + _block.RHeight/2,
-                                      RWidth/2 + 14*20, _block.RY + _block.RHeight + 4*20);//if else condition is empty draw lines to connect with the end of left branch
+                    Graphics.DrawLine(ArrowPen, _block.RX + _block.RWidth, _block.RY + _block.RHeight / 2,
+                                                _block.RX + _block.RWidth + 10 * 20, _block.RY + _block.RHeight / 2);
+                    Graphics.DrawLine(ArrowPen, _block.RX + _block.RWidth + 10 * 20, _block.RY + _block.RHeight / 2,
+                                                _block.RX + _block.RWidth + 10 * 20, RHeight);//if else condition is empty draw lines to connect with the end of left branch
+                    Graphics.DrawArrow(ArrowPen, _block.RX + _block.RWidth + 10 * 20, RHeight,
+                                                RWidth / 2, RHeight);
                 }
             }
             else //switch

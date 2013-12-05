@@ -76,6 +76,10 @@ namespace DronovsCharts.Analyze
                     pList.Add(last);
             }
 
+            for (int index = 0; index < pList.Count; index++)
+            {
+                pList[index] = pList[index].Trim(' ', '\r', '\n', '\t');
+            }
 
             return pList.ToArray();
         }

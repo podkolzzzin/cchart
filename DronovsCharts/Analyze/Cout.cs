@@ -8,7 +8,7 @@ namespace DronovsCharts.Analyze
         public Cout(string code)
         {
             _code = code;
-            if (code.StartsWith("cout<<"))
+            if (code.StartsWith("cout"))
                 _coutContr();
             else
                 _printfConstr();
